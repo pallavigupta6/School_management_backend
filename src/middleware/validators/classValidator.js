@@ -35,11 +35,3 @@ export const validateClass = [
 ];
 
 
-// {
-// name: "novel",
-// studentFees: 0,
-// studentfee: "8",
-// students: [],
-// teacher: "",
-// year: 2024,
-// }
