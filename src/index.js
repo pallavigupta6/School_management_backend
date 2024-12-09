@@ -9,7 +9,7 @@ import classRoutes from "./routes/classRoutes.js";
 import teacherRoutes from "./routes/teacherRoutes.js";
 import studentRoutes from "./routes/studentRoutes.js";
 import { validateClass } from "./middleware/validators/classValidator.js";
-import analyticsRoutes from './routes/analytics.js';
+import analyticsRoutes from "./routes/analytics.js";
 
 // Load environment variables
 import "dotenv/config";
@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/classes", classRoutes);
 app.use("/api/teachers", teacherRoutes);
 app.use("/api/students", studentRoutes);
-app.use('/api/analytics', analyticsRoutes);
+app.use("/api/analytics", analyticsRoutes);
 
 // Base route
 app.get("/", (req, res) => {
